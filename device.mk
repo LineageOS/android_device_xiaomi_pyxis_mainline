@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.pyxis.rc
+    init.pyxis.rc \
+    ueventd.pyxis.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
