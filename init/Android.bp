@@ -9,3 +9,9 @@ prebuilt_etc {
     sub_dir: "init/hw",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "ueventd.pyxis.rc",
+    src: "ueventd.pyxis.rc",
+    vendor: true,
+}
