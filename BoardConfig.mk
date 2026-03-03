@@ -14,9 +14,6 @@ BOARD_KERNEL_CMDLINE += \
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Fastboot
-TARGET_BOARD_FASTBOOT_INFO_FILE := $(DEVICE_PATH)/misc/fastboot-info.txt
-
 # Kernel
 TARGET_DTB_LIST_WILDCARD := \
     qcom/sdm710-xiaomi-pyxis \
