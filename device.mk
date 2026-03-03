@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-TARGET_DEVICE_PATH := device/xiaomi/mi710-mainline/pyxis_mainline
+DEVICE_PATH := device/xiaomi/mi710-mainline/pyxis_mainline
 
 # Inherit options from mainline/qcom-common
 ## SoC
@@ -13,7 +13,7 @@ TARGET_AUDIO_HAL := default-aidl
 TARGET_SUPPORTS_SUSPEND := false
 include device/mainline/qcom-common/optional/options.mk
 
-# Inherit from parent
+# Inherit from mi710-mainline
 $(call inherit-product, device/xiaomi/mi710-mainline/device.mk)
 
 # AAPT
@@ -35,3 +35,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.pyxis.rc
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH)

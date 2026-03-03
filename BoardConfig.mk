@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from parent
+# Inherit from mi710-mainline
 include device/xiaomi/mi710-mainline/BoardConfig.mk
 
 # Boot parameters
@@ -15,7 +15,7 @@ BOARD_KERNEL_CMDLINE += \
 TARGET_SCREEN_DENSITY := 440
 
 # Fastboot
-TARGET_BOARD_FASTBOOT_INFO_FILE := $(TARGET_DEVICE_PATH)/misc/fastboot-info.txt
+TARGET_BOARD_FASTBOOT_INFO_FILE := $(DEVICE_PATH)/misc/fastboot-info.txt
 
 # Kernel
 TARGET_DTB_LIST_WILDCARD := \
